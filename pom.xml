@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ir.msob.jima.parent</groupId>
+        <artifactId>jima-parent</artifactId>
+        <version>1.1.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>ir.msob.jima.scheduler</groupId>
+    <artifactId>scheduler-parent</artifactId>
+    <version>0.1.0</version>
+    <name>scheduler-parent</name>
+    <description>scheduler-parent</description>
+    <packaging>pom</packaging>
+    <properties>
+        <!-- MSob -->
+        <core-parent.version>1.1.8</core-parent.version>
+    </properties>
+    <modules>
+        <module>commons</module>
+        <module>client</module>
+        <module>service</module>
+        <module>api</module>
+        <module>ral</module>
+        <module>starter</module>
+        <module>reports</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ir.msob.jima.parent</groupId>
+                <artifactId>jima-bom</artifactId>
+                <version>${jima-parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

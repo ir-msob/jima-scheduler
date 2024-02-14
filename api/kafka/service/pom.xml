@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ir.msob.jima.scheduler</groupId>
+        <artifactId>scheduler-api-kafka</artifactId>
+        <version>0.1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>scheduler-api-kafka-service</artifactId>
+    <name>service</name>
+    <description>service</description>
+    <packaging>jar</packaging>
+    <dependencies>
+        <!-- MSob -->
+        <dependency>
+            <groupId>ir.msob.jima.scheduler</groupId>
+            <artifactId>scheduler-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.msob.jima.scheduler</groupId>
+            <artifactId>scheduler-api-kafka-client</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.msob.jima.core</groupId>
+            <artifactId>core-api-kafka-commons</artifactId>
+            <version>${core-parent.version}</version>
+        </dependency>
+    </dependencies>
+</project>

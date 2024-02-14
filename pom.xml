@@ -10,7 +10,7 @@
     </parent>
     <groupId>ir.msob.jima.scheduler</groupId>
     <artifactId>scheduler-parent</artifactId>
-    <version>0.1.0</version>
+    <version>1.1.1</version>
     <name>scheduler-parent</name>
     <description>scheduler-parent</description>
     <packaging>pom</packaging>
